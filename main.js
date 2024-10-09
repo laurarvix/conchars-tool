@@ -3,18 +3,29 @@ const { createCanvas } = require('canvas');
 const opentype = require('opentype.js');
 
 // Path to your TTF file
-const fontPath = 'path/to/your/font.ttf';
+const fontPath = 'font.ttf';
 // Output image and data paths
-const outputPath = 'font_sheet.png';
+const outputPath = 'conchars.png';
 const outputDataPath = 'font_data.json';
 
 // Define the character grid
 const characterGrid = [
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    "abcdefghijklmnopqrstuvwxyz",
-    "0123456789",
-    "!\"#$%&'()*+,-./:;<=>?@[\\]_^`{|}~",
-    " " // Add more rows as needed
+    "                ",
+    "  0123456789.   ",
+    " !"#$%&'<>×+,-./"
+    "0123456789:;<=>?"
+    "@ABCDEFGHIJKLMNO",
+    "PQRSTUVWXYZ[\]^_",
+    "'abcdefghijklmno"
+"pqrstuvwxyz{:}~ "
+"                "
+"  0123456789.   "
+" !"#$%&'<>×+,-./"
+    "0123456789:;<=>?"
+"@ABCDEFGHIJKLMNO"
+"PQRSTUVEXYZ[\]^_"
+"'abcdefghijklmno"
+"pqrstivwxyz{:}~ "// Add more rows as needed
 ];
 
 // Define the resolution for each character
